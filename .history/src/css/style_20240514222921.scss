@@ -1,0 +1,52 @@
+@use "./base/fonts";
+@use "./base/variable" as *;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+.bg-light-theme {
+  background-image: url("../assets/images/bg-desktop-light.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  height: 300px;
+}
+
+.bg-dark-theme {
+  background-image: url("../assets/images/bg-desktop-dark.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  height: 300px;
+}
+.theme-content {
+  width: 38%;
+  margin: 0 auto;
+  h1 {
+    font-weight: 700;
+    color: white;
+    font-size: 2.6rem;
+  }
+  img {
+    width: 100%;
+    max-width: 35px;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    filter: invert(49%) sepia(19%) saturate(25.5) hue-rotate(-12deg)
+      brightness(99%);
+  }
+}

@@ -1,0 +1,40 @@
+@mixin customCheckbox {
+  display: none;
+}
+
+@mixin checkboxCustom {
+  width: 23px;
+  height: 23px;
+  border: 2px solid #ccc;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  top: 4px;
+}
+
+@mixin checkedCheckboxCustom {
+  background-image: linear-gradient(
+    to right,
+    hsl(192, 100%, 67%),
+    hsl(280, 87%, 65%)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+@mixin checkedCheckboxCustomAfter {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 5px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
